@@ -25,7 +25,7 @@ const connect = async () => {
   }
 }
 
-app.use(cors({origin: "https://fiverr-clone-vs.netlify.app/", credentials: true}))
+app.use(cors({origin: "https://fiverr-clone-vs.netlify.app", credentials: true}))
 app.use(express.json());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
