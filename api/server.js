@@ -10,7 +10,6 @@ import reviewRoute from "./routes/review.route.js";
 import authRoute from "./routes/auth.route.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
-import bodyParser from "body-parser";
 
 const app = express();
 dotenv.config();
@@ -27,8 +26,6 @@ const connect = async () => {
 
 app.use(cors({origin: "https://fiverr-clone-vs.netlify.app", credentials: true}))
 app.use(express.json());
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 app.use("/api/auth", authRoute)
