@@ -43,7 +43,7 @@ const Message = () => {
           <Link to="/messages" className="link">
             MESSAGES
           </Link>{" "}
-          {">"} JOHN DOE {">"}
+          {">"} Seller {">"}
         </span>
         {isLoading ? (
           "loading"
