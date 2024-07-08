@@ -3,7 +3,7 @@ import "./Slide.scss";
 import Slider from "infinite-react-carousel";
 
 
-//using libraray infinite-react-carousel
+//Using libraray infinite-react-carousel
 
 const Slide = ({children, slidesToShow,arrowsScroll}) => {
   return (
